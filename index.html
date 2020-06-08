@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
+	<!-- Add to homescreen for Chrome on Android -->
+	<meta name="mobile-web-app-capable" content="yes">
+
+
+	<!-- Add to homescreen for Safari on iOS -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="styles/style.css">
+	
+</head>
+
+<body>
+	<div id="app">
+		
+		<header id="header" class="fixed-top">
+			<nav class="navbar navbar-expand-lg  bg-nav">
+        <a class="navbar-brand" href="index.html">
+						<img src="images/icon-logo1.png" alt="logo">
+				  </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#links" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="fa fa-bars" style="font-size:24px"></span>
+					</button>
+        <div class="collapse navbar-collapse" id="links">
+          <div class="navbar-nav float-right text-right pr-3">
+            <ul class="navbar-nav menu mr-auto">
+              <li class="nav-item active">
+									<a class="nav-link" data-toggle="collapse" data-toggle="collapse" data-target=".navbar-collapse.show" onclick="rolePage('home')">Home</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" data-toggle="collapse" data-toggle="collapse" data-target=".navbar-collapse.show" onclick="rolePage('schedule')">Schedule</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" data-toggle="collapse" data-toggle="collapse" data-target=".navbar-collapse.show" onclick="rolePage('locations')">Locations</a>
+								</li>
+								
+								<li class="nav-item">
+									<a class="nav-link" data-toggle="collapse" data-toggle="collapse" data-target=".navbar-collapse.show" onclick="rolePage('contact')">Contact</a>
+								</li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+		
+</header>
+
+		
+			<!-- .contenedorflex -->
+
+			<section id="schedule">
+
+				<div v-show= "section == 'schedule'" class="listado col ls-33 pt-4">
+					<p class=title2><em>* All games take place on Saturday.</em></p>
+					<table class="table table-dark table-striped mx-auto">
+						<thead>
+
+						</thead>
+						<tbody>
+							<tr>
+								<td>9/01</td>
+								<td>U1 vs U4</td>
+								<td><a href="https://goo.gl/maps/vHTxcuMrhbH2" id="b1" class="lugar active">AJ Katzenmaier</a></td>
+								<td>9:30 a.m.</td>
+							</tr>
+							<tr>
+								<td>9/01</td>
+								<td>U3 vs U2</td>
+								<td><a href="https://goo.gl/maps/2LCwAKsTkiTxeCr17" id="b2" class="lugar">Greenbay</a></td>
+								<td>1:00 p.m.</td>
+							</tr>
+							<tr>
+								<td>9/08</td>
+								<td>U5 vs U6</td>
+								<td><a href="https://goo.gl/maps/pS6sXQccLiDnhJgE7" id="b3" class="lugar">Howard A Yeager</a></td>
+								<td>9:30 a.m.</td>
+							</tr>
+							<tr>
+								<td>9/08</td>
+								<td>U6 vs U1</td>
+								<td><a href="https://goo.gl/maps/c7r3mckMTQdTw9dQ7" id="b4" class="lugar">Marjorie P Hart</a> </td>
+								<td>1:00 p.m.</td>
+							</tr>
+							<tr>
+								<td>9/15</td>
+								<td>U2 vs U4</td>
+								<td><a href="https://goo.gl/maps/2XgzDKWJram4AHv2A" id="b5" class="lugar">North</a></td>
+								<td>9:30 a.m.</td>
+							</tr>
+							<tr>
+								<td>9/15</td>
+								<td>U3 vs U5</td>
+								<td><a href="https://goo.gl/maps/vHTxcuMrhbH2" id="b1" class="lugar">AJ Katzenmaier</a></td>
+								<td>1:00 p.m.</td>
+							</tr>
+							<tr>
+								<td>9/22</td>
+								<td>U1 vs U3</td>
+								<td><a href="https://goo.gl/maps/138CMeXeJLAy5H3L8" id="b6" class="lugar">South</a></td>
+								<td>9:30 a.m.</td>
+							</tr>
+							<tr>
+								<td>9/22</td>
+								<td>U2 vs U6</td>
+								<td><a href="https://goo.gl/maps/pS6sXQccLiDnhJgE7" id="b3" class="lugar">Howard A Yeager</a></td>
+								<td>1:00 p.m.</td>
+							</tr>
+							<tr>
+								<td>9/29</td>
+								<td>U4 vs U5</td>
+								<td><a href="https://goo.gl/maps/2LCwAKsTkiTxeCr17" id="b2" class="lugar">Greenbay</a></td>
+								<td>9:30 a.m.</td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="table table-striped table-dark">
+						<thead>
+
+						</thead>
+						<tbody>
+							<tr>
+								<td>10/06</td>
+								<td>U2 vs U5</td>
+								<td><a href="https://goo.gl/maps/c7r3mckMTQdTw9dQ7" id="b4" class="lugar">Marjorie P Hart</a></td>
+								<td>9:30 a.m.</td>
+							</tr>
+							<tr>
+								<td>10/06</td>
+								<td>U1 vs U6</td>
+								<td><a href="https://goo.gl/maps/138CMeXeJLAy5H3L8" id="b6" class="lugar">South</a></td>
+								<td>1:00 p.m.</td>
+							</tr>
+							<tr>
+								<td>10/13</td>
+								<td>U3 vs U4</td>
+								<td><a href="https://goo.gl/maps/pS6sXQccLiDnhJgE7" id="b3" class="lugar">Howard A Yeager</a></td>
+								<td>9:30 a.m.</td>
+							</tr>
+							<tr>
+								<td>10/13</td>
+								<td>U5 vs U1</td>
+								<td><a href="https://goo.gl/maps/2LCwAKsTkiTxeCr17" id="b2" class="lugar">Greenbay</a></td>
+								<td>1:00 p.m.</td>
+							</tr>
+							<tr>
+								<td>10/20</td>
+								<td>U6 vs U3</td>
+								<td><a href="https://goo.gl/maps/2XgzDKWJram4AHv2A" id="b5" class="lugar">North</a></td>
+								<td>9:30 a.m.</td>
+							</tr>
+							<tr>
+								<td>10/20</td>
+								<td>U2 vs U4</td>
+								<td><a href="https://goo.gl/maps/c7r3mckMTQdTw9dQ7" id="b4" class="lugar">Marjorie P Hart</a> </td>
+								<td>1:00 p.m.</td>
+							</tr>
+							<tr>
+								<td>10/27</td>
+								<td>U3 vs U1</td>
+								<td><a href="https://goo.gl/maps/vHTxcuMrhbH2" id="b1" class="lugar">AJ Katzenmaier</a></td>
+								<td>9:30 a.m.</td>
+							</tr>
+							<tr>
+								<td>10/27</td>
+								<td>U5 vs U6</td>
+								<td><a href="https://goo.gl/maps/pS6sXQccLiDnhJgE7" id="b3" class="lugar">Howard A Yeager</a></td>
+								<td>1:00 p.m.</td>
+							</tr>
+						</tbody>
+					</table><br>
+		</div>	
+		</section>
+			<!--end row-->
+
+
+			<!--events-->
+			<section class="" id="home">
+				<div v-show="section == 'home'">
+				<h3 class="title2">Upcoming Events</h3>
+
+				<div class="my-3 p-3 rounded bg-dark text-white" id="info">
+					<h4>August 4</h4>
+					<p class="indent">NYSL Fundraiser</p>
+
+					<h4>August 16</h4>
+					<p class="indent">Season Kick-off: Meet the Teams</p>
+
+					<h4>September 1</h4>
+					<p class="indent"> First Game of the Season (Check Game Schedule for details)</p>
+
+				</div>
+
+				<a href="#schedule" onclick="rolePage('schedule')" class="btn btn-success btn-lg btn-block border border-dark" role="button">Game Schedule</a>
+				<a href="#location" onclick="rolePage('locations')" class="btn btn-success btn-lg btn-block border border-dark" role="button">Locations</a>
+				<br>
+				</div>
+			</section> <!-- end events -->
+		
+			<section id="locations">
+				<div v-show="section == 'locations'"class="container">
+		<h3 class=title2>Game Locations</h3>
+		<!-- Accordion -->
+   <div id="accordion">
+		<div class="card color_accordion">
+			<div class="card-header" id="heading1">
+				<a class="card-link" data-toggle="collapse" href="#collapse1">
+					<h5 class="mb-0">AJ Katzenmaier Elementary</h5>
+				</a>
+			</div>
+
+			<div id="collapse1" class="collapse show" data-parent="#accordion">
+				<div class="card-body color_accordion">
+					<h6>24 W. Walton St., Chicago, IL 60610</h6>
+					<iframe style="width: 100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.654246110987!2d-87.6312390845582!3d41.90029237922041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd34e07f6bac3%3A0x68a82e5d59952c86!2s24+W+Walton+St%2C+Chicago%2C+IL+60610%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1552913537479" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+		<div class="card color_accordion">
+			<div class="card-header" id="heading2">
+
+				<a class="collapsed card-link" data-toggle="collapse" href="#collapse2">
+					<h5 class="mb-0">Greenbay Elementary</h5>
+				</a>
+
+			</div>
+			<div id="collapse2" class="collapse" data-parent="#accordion">
+				<div class="card-body color_accordion">
+					<h6>1734 N. Orleans St., Chicago, IL 60614</h6>
+					<iframe style="width: 100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.0256986745426!2d-87.64002798505479!3d41.91380627115881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd34073f306a3%3A0x9e1726bbf8f23f0e!2s1734+N+Orleans+St%2C+Chicago%2C+IL+60614%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1552913711254" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+		<div id="accordion">
+			<div class="card color_accordion">
+				<div class="card-header">
+
+					<a class="collapsed card-link" data-toggle="collapse" href="#collapse3">
+						<h5 class="mb-0">Howard A Yeager Elementary</h5>
+					</a>
+				</div>
+
+				<div id="collapse3" class="collapse" data-parent="#accordion">
+					<div class="card-body color_accordion">
+						<h6>2625 N. Orchard St., Chicago, IL 60614</h6>
+						<iframe style="width: 100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.2917289530833!2d-87.64808628505426!3d41.929582270170805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd30f2630e551%3A0x3e719e44a5cef714!2s2625+N+Orchard+St%2C+Chicago%2C+IL+60614%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1552913859991" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+			<div class="card color_accordion">
+				<div class="card-header" id="heading4">
+					<a class="card-link" data-toggle="collapse" href="#collapse4">
+						<h5 class="mb-0">Marjorie P Hart Elementary</h5>
+					</a>
+				</div>
+				<div id="collapse4" class="collapse" data-parent="#accordion">
+					<div class="card-body color_accordion">
+						<h6>2625 N. Orchard St., Chicago, IL 60614</h6>
+						<iframe style="width: 100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.2917289530833!2d-87.64808628505426!3d41.929582270170805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd30f2630e551%3A0x3e719e44a5cef714!2s2625+N+Orchard+St%2C+Chicago%2C+IL+60614%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1552913859991" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="accordion">
+			<div class="card color_accordion">
+				<div class="card-header" id="heading5">
+					<a class="card-link" data-toggle="collapse" href="#collapse5">
+						<h5 class="mb-0">North Elementary</h5>
+					</a>
+				</div>
+
+				<div id="collapse5" class="collapse" data-parent="#accordion">
+					<div class="card-body color_accordion">
+						<h6>1409 N. Ogden Ave., Chicago, IL 60610</h6>
+						<iframe style="width: 100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.3363025419576!2d-87.64835588505504!3d41.90712867157694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd33af13a8945%3A0xb6ad1ec2b6f379ba!2s1409+N+Ogden+Ave%2C+Chicago%2C+IL+60610%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1552913888038" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+			<div id="accordion">
+				<div class="card color_accordion">
+					<div class="card-header" id="heading6">
+						<a class="collapsed card-link" data-toggle="collapse" href="#collapse6">
+							<h5 class="mb-0">South Elementary</h5>
+						</a>
+					</div>
+					<div id="collapse6" class="collapse" data-parent="#accordion" aria-labelledby="heading6">
+						<div class="card-body color_accordion">
+							<h6>2101 N. Fremont St., Chicago, IL 60614</h6>
+							<iframe style="width: 100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.654246110987!2d-87.6312390845582!3d41.90029237922041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd34e07f6bac3%3A0x68a82e5d59952c86!2s24+W+Walton+St%2C+Chicago%2C+IL+60610%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1552913537479" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+	<!--contact-->
+	<section>
+		<div v-show="section == 'contact'">
+		 <div  class="border rounder" id="contact">
+			<p><strong>Please direct all questions to:</strong></p>
+			<p><strong>Michael Randall </strong></p>
+				<div class="info-game">
+					<p>Email: <a href="mailto:michael.randall@chisoccer.org?Subject=Hello">michael.randall@chisoccer.org</a></p>
+							Phone: (630) 690-8132
+						</div>
+						<p><strong>League Coordinator </strong></p>
+						<br>
+					</div>
+				</div>
+			</section>
+		
+	</div>
+	<!--end container-->
+
+	<script src="https://unpkg.com/vue/dist/vue.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="js/matches.js"></script>
+	<script src="js/script.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,277 @@
+
+body{
+	
+  background-image: url("../images/bg-01.jpg");
+	background-color: #ffe2cd87;
+  font-family: Verdana,sans-serif;
+  background-repeat: repeat;
+  background-size: cover;
+	background-attachment: fixed;
+}
+.container{
+	/*display: grid;*/
+	background-image: url("../images/bg-01.jpg");
+	background-repeat: repeat;
+  background-size: cover;
+	background-attachment: fixed;
+	/*grid-template-columns: repeat(2,1fr);*/
+	margin: 0px;
+	
+}
+#header{
+  display: flex;
+	background-image: linear-gradient(green,lightgreen, black);
+	display: inline-block;
+	 
+}
+
+img {
+	padding-top: 0px;
+	vertical-align:middle;
+	float: left;
+	
+}
+
+.btn-success {
+    color: #fff;
+    border-color: #28a745;
+	  background-color: rgba(0,0,0,.5);
+   	border: 5px solid black ;
+	}
+
+.btn-success, a:hover{
+	font-weight: bold;
+}
+
+#contact{
+	text-align: center;
+	background-color: rgba(0,0,0,.5);
+	color: aliceblue;
+	width: 100%;
+  padding: 10px;
+	padding: 10px;
+  margin-top: 200px;
+  margin-bottom: 5px;
+  
+	  
+}
+
+/*  ======= NAVBAR ======= */
+
+.active {
+    
+    color: white;
+  }
+ 
+.title2 {
+	text-align: center;
+	color: white;
+	margin-top: 60px;
+}	
+
+#info{
+	text-align: justify;
+}
+
+.active {
+  
+  color: white;
+}
+.glyphicon-menu-hamburger:before {
+    content: "\e236";
+}
+
+
+/*  ======= ACCORDION ======= */
+.color_accordion{
+  background-color: #0a8b0070;
+}
+
+.card-header {
+  padding: .75rem 1.25rem;
+  margin-bottom: 0;
+  background-color: rgba(0,0,0,.5);
+  border-bottom: 2px solid ;
+  border-top: 2px solid ;
+}
+.car-block{
+  background-color: lightgreen;
+}
+.collapse {
+    text-align: left;
+		color: white;
+}
+.car-body{
+
+}
+a{
+	color: antiquewhite;
+}
+  
+
+/* Smartphones (portrait and landscape) ----------- */
+
+@media only screen and (orientation: portrait){ 
+	
+.mostrar-portrait{
+    display: block
+  }
+
+.mostrar-landscape{
+    display: none;
+  }
+	
+.container{
+	/*display: grid;*/
+	grid-template-columns: repeat(2,1fr);
+	}
+
+.container-fluid {
+   display: flex;
+   flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+	}
+a:hover {
+    color:#28a745;
+    text-decoration: underline;
+}
+	
+	
+#aside{
+		display:list-item;
+    	}
+#schedule .card-body .match-LS{
+    display: none;
+  }
+
+}
+/*LANDSCAPE MODE*/
+@media only screen and (orientation: Landscape) {
+	
+	#schedule .dropdown button{
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  #schedule .dropdown-menu{
+    width: 100%;
+    background-color: #578694;   
+  }
+  #schedule a{
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  #schedule .card-body button{
+    height: auto;
+    padding: 5px;
+  }
+  .ls-33{
+    height: 80vh;
+    overflow: scroll;
+    width: 33%;
+    float: left;
+    text-align: center;
+  }
+  .ls-66{
+    width: 66%;
+    float: right;
+    height: 80vh;
+    overflow: scroll;
+  }
+  .ls-66 .info{
+    padding: 0;
+  }
+
+  
+  .mostrar-portrait{
+    display: none
+  }
+	.mostrar-landscape{
+    display: block;
+		
+  }
+	#events{
+		display: block;
+	}
+	
+	.container{
+		padding: 0px;
+		
+	}
+	#home{
+		display: block;
+	}
+  #contact{
+		display: block;
+	}
+  
+.border-rounder{
+  position:absolute;
+	position: fixed;
+	display: inline-block;
+	margin-left: 2px;
+	margin-right: 2px;
+	clear: left;
+	
+  }
+.listado{
+		width: 53%;
+		height: auto;
+    /*overflow: none;*/
+    float: left;
+    text-align: center;
+		padding: 0px;
+		font-size: 12px;
+		margin-left: 5px;
+	}
+.mapa{
+		width:46%;
+		display: block;
+    float: right;
+    margin-top: 100px;
+		padding: 0px;
+	}
+	h5{
+		text-align: center;
+		color: white;
+	}
+	h6{
+		color:white;
+	}
+	a:hover {
+    color:#28a745;
+    text-decoration: underline;
+}
+	#schedule{
+		width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    /*white-space: nowrap;*/
+		position: absolute;
+    display: inline;
+	}
+  #schedule a{
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  #schedule .card-body button{
+    height: auto;
+    padding: 5px;
+  }
+	
+
+}
+
+@media only screen and (min-width: 992px){
+	#home{
+		display:block;
+	}
+	#contact{
+		display: block;
+	}
+	
+	
+}
+	
