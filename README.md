@@ -7,3 +7,8 @@ HTML/CSS/JS/FIREBASE
 
 
 ![nysl-app](https://user-images.githubusercontent.com/48371387/84106986-ef49ea80-a9f2-11ea-8ce9-9c2a841a195b.png)
+
+
+
+version no singlePage
+https://app-nysl-02.web.app/index.html
