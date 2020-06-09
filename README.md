@@ -11,4 +11,4 @@ HTML/CSS/JS/FIREBASE
 
 
 version no singlePage
-https://app-nysl-02.web.app/index.html
+https://app-nysl-02.web.app
